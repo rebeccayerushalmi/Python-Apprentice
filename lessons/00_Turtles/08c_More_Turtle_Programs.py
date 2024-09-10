@@ -27,7 +27,7 @@ screen.setup(width=600, height=600)
 # Create a turtle and set its shape to the custom GIF
 t = turtle.Turtle()
 
-set_turtle_image("girl_blue.gif")
+set_turtle_image(t,"girl_blue.gif")
 
 t.penup()
 t.speed(3)
