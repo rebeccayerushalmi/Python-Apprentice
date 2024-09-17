@@ -14,9 +14,14 @@ tina.shape('turtle')                    # Set the shape of the turtle to a turtl
 tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
 
 
-colors = [ 'red', 'blue', 'black', 'orange']    # define a list of colors
+colors = [ 'red', 'blue', 'black', 'orange', 'pink']    # define a list of colors
 
-for color in colors:                            # loop through the colors
+for color in colors:
+    tina.color(color) 
+    tina.forward(90)
+    tina.right(90)
+    print(color)
+                               # loop through the colors
     ... # Your code here
 
 
@@ -24,4 +29,4 @@ for color in colors:                            # loop through the colors
 
 ... # Your code here
 
-tina.done()
+turtle.exitonclick()
