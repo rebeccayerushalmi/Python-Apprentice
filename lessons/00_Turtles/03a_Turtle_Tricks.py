@@ -33,7 +33,6 @@ tina.right(120)
 tina.forward(30)
 tina.pendown()
 
-
 tina.begin_fill()
 tina.fillcolor("yellow")
 tina.pencolor("yellow")
@@ -51,25 +50,40 @@ tina.forward(200)
 tina.end_fill()
 
 tina.begin_fill()
-tina.fillcolor((233,197,98))
-tina.pencolor((233,197,98))
+tina.fillcolor("#C6A13D")
+tina.pencolor("#C6A13D")
 tina.forward(20)
 tina.right(180)
-for i in range(1):
+for i in range(5):
     tina.right(90)
-    tina.backward(200)
+    tina.backward(110)
     tina.left(90)
     tina.forward(20)
     tina.left(90)
-    tina.backward(200)
+    tina.backward(110)
     tina.right(90)
-    tina.forward(20)
+    tina.forward(35)
 tina.end_fill()
 
 
 
+tina.right(180)
+tina.forward(60)
+
+def drawFry():
+    tina.setheading(90)
+    tina.begin_fill()
+    tina.fillcolor("#D3CA63")
+    tina.pencolor("#D3CA63")
+    tina.forward(50)
+    tina.left(90) 
+    tina.forward(20)
+    tina.left(90)
+    tina.forward(50)
+    tina.right(90)
+    tina.forward(35) 
+    tina.end_fill()
+drawFry()
 
 
-
-
-turtle.exitonclick() # Close the window when we click
+turtle.done()
