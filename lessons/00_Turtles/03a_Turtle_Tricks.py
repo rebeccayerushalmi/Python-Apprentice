@@ -62,14 +62,16 @@ for i in range(5):
     tina.left(90)
     tina.backward(110)
     tina.right(90)
+    tina.penup()
     tina.forward(35)
+    tina.pendown()
 tina.end_fill()
 
 
-
+tina.penup()
 tina.right(180)
 tina.forward(60)
-
+tina.pendown()
 def drawFry():
     tina.setheading(90)
     tina.begin_fill()
@@ -84,6 +86,24 @@ def drawFry():
     tina.forward(35) 
     tina.end_fill()
 drawFry()
+tina.forward(67)
+drawFry()
+
+
+
+def drawMc(x,y):
+    tina.penup()
+    tina.goto(x,y)
+    tina.pendown()
+    tina.pencolor("yellow")
+    tina.write("Mcdonalds", font = ("Lovin'Sans", 20, "bold"))
+
+drawMc(-40,-70)
+
+tina.penup()
+tina.goto(200,-100)
+tina.pendown()
+tina.write("Rebecca y", font = ("ITALIANNO", 10, "bold"))
 
 
 turtle.done()
